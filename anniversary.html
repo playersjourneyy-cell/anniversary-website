@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Anniversary</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="anniversary.css">
+</head>
+<body>
+
+    <h1 id="happyText"></h1>
+
+    <div class="intro-one-wrapper">
+      <p class="intro-one">Thank You</p>
+      <p class="intro-onee">For you are God's gift to me. For you
+        are my better half. For allowing and reminding me of who God is. For a relationship that is not perfect but genuine and pulls
+        each other closer to Jesus despite the mistakes encountered.
+      </p>
+    </div>
+
+    <div class="picture-one-wrapper">
+      <div class="picture-onee-wrapper">
+        <img class="picture" src="one.jpeg" alt="picture">
+        <p>#doubleChinSelfie</p>
+      </div>
+      <div class="picture-onee-wrapper">
+        <img class="picture" src="two.jpeg" alt="picture">
+        <p>#supladaAkoSelfie</p>
+      </div>
+      <div class="picture-onee-wrapper">
+        <img class="picture" src="three.jpeg" alt="picture">
+        <p>#akoNamanSaKabila</p>
+      </div>
+      <div class="picture-onee-wrapper">
+        <img class="picture" src="twelve.jpeg" alt="picture">
+        <p>#oplanTakipDoubleChin</p>
+      </div>
+      <div class="picture-onee-wrapper">
+        <img class="picture" src="thirteen.jpeg" alt="picture">
+        <p>#matarayAko</p>
+      </div>
+    </div>
+
+    <div class="intro-two-wrapper">
+      <p class="intro-two">Thank You</p>
+      <p class="intro-twoo">For how you serve your family unconditionally. For
+      how you treat them with love and care. For how you put their needs before
+      yours. For helping them in every way possible without expecting anything in return.
+      </p>
+    </div>
+
+    <div class="picture-two-wrapper">
+      <div class="picture-twoo-wrapper">
+        <img class="picture" src="four.jpeg" alt="picture">
+        <p>#breakfastSaMcdo</p>
+      </div>
+      <div class="picture-twoo-wrapper">
+        <img class="picture" src="six.jpeg" alt="picture">
+        <p>#takpanAngDoubleChin</p>
+      </div>
+      <div class="picture-twoo-wrapper">
+        <img class="picture" src="seven.jpeg" alt="picture">
+        <p>#higaMunaKaySnorlax</p>
+      </div>
+    </div>
+
+    <div class="intro-three-wrapper">
+      <p class="intro-three">Thank You</p>
+      <p class="intro-threee">For how diligent and responsible you are at
+      work. For you do your best to make sure that everything is okay before
+      you leave.
+      </p>
+    </div>
+
+    <div class="picture-three-wrapper">
+      <div class="picture-threee-wrapper">
+        <img class="picture" src="eight.jpeg" alt="picture">
+        <p>#gymBeforeMagInasal</p>
+      </div>
+      <div class="picture-threee-wrapper">
+        <img class="picture" src="nine.jpeg" alt="picture">
+        <p>#huhuhuLegDay</p>
+      </div>
+      <div class="picture-threee-wrapper">
+        <img class="picture" src="ten.jpeg" alt="picture">
+        <p>#approveKaSakin</p>
+      </div>
+      <div class="picture-threee-wrapper">
+        <img class="picture" src="fifteen.jpeg" alt="picture">
+        <p>#poseMunaSabayUwi</p>
+      </div>
+      <div class="picture-threee-wrapper">
+        <img class="picture" src="fourteen.jpeg" alt="picture">
+        <p>#beautifulGenski</p>
+      </div>
+    </div>
+
+    <div class="intro-four-wrapper">
+      <p class="intro-four">Thank You</p>
+      <p class="intro-fourr">For you have given me a chance to have you in this
+      life time. For you are my girlfriend. For being with me in this relationship.
+      </p>
+    </div>
+
+    <div class="picture-four-wrapper">
+      <div class="picture-fourr-wrapper">
+        <img class="picture" src="sixteen.jpeg" alt="picture">
+        <p>#selfieLang</p>
+      </div>
+      <div class="picture-fourr-wrapper">
+        <img class="picture" src="seventeen.jpeg" alt="picture">
+        <p>#sunflowerSelfie</p>
+      </div>
+      <div class="picture-fourr-wrapper">
+        <img class="picture" src="nineteen.jpeg" alt="picture">
+        <p>#haaaaAnoYann</p>
+      </div>
+    </div>
+
+    <div class="love-letter-wrapper">
+      <p class="love-letter-intro">Love Letter</p>
+    </div>
+
+    <div class="love-letter-content-wrapper">
+      <div class="love-letter-content-title">My Love,</div>
+      <div class="love-letter-content">I thank and appreciate God everyday that
+      I have you. No matter what / how things may seem to be (conflicts, happy
+      moments, food trip, gala, and any random things that we do) you'll always
+      be my favorite. Thank you for all that you do in our relationship, I see
+      all the things that you do and appreciate every ounce of effort that you
+      show in our relationship. Thank you for staying and for loving me despite
+      of how incapable and limited I am. Thank you for how genuine your heart is
+      and that  I've found a treasure named  "Genesis". Know that I hear the
+      things that you say and see the things that you do. I'm excited to see
+      more of the things that we will do together and to experience more of
+      God's love, guidance, and protection in our relationship. Thank you for
+      you are the best gift that I've ever received. Thank you for the very life
+      of yours. I love you. Happy Anniversary, love.</div>
+    </div>
+
+    <div class="ender">Annniversary 2025</div>
+
+<script>
+    const text = "Love, \nHappy Anniversary!";
+    const el = document.getElementById("happyText");
+
+    function typeText() {
+        let i = 0;
+        el.textContent = '';
+        let typing = setInterval(() => {
+            el.textContent += text[i];
+            i++;
+            if (i >= text.length) {
+                clearInterval(typing);
+                setTimeout(typeText, 5000); // retype after 5s
+            }
+        }, 200);
+    }
+
+    typeText();
+</script>
+
+</body>
+</html>

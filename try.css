@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'JennaSue';
+  src: url('fonts/JennaSue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #182942;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* ensure lines stack and are centered */
+  text-align: center;     /* center each line horizontally */
+  white-space: pre-line;  /* preserve the JS newline as a line break */
+  height: 100vh;
+  margin: 0;
+  font-size: 150px;
+  background: linear-gradient(90deg, #ff6b6b, #ffd166, #6bf5ff, #8b5cf6);
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 12s linear infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.intro-one, .intro-two, .intro-three, .intro-four, .love-letter-intro {
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'JennaSue', cursive;
+  font-size: 90px;
+  text-align: center;
+  color: #ffa14f;
+  margin: 0;
+}
+
+.intro-onee, .intro-twoo, .intro-threee, .intro-fourr {
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'JennaSue', cursive;
+  font-size: 40px;
+  text-align: center;
+  color: #ffa14f;
+  margin: 25px 0 0 0;
+  padding: 0 200px 0 200px;
+  width: auto;
+}
+
+.intro-two-wrapper, .intro-three-wrapper, .intro-four-wrapper, .love-letter-wrapper {
+  margin-top: 200px;
+}
+
+.intro-two {
+  color: #ffa14f;
+}
+
+.intro-twoo {
+  color: #ffa14f;
+}
+
+.intro-three {
+  color: #ffa14f;
+}
+
+.intro-threee {
+    color: #ffa14f;
+}
+
+.intro-four {
+  color: #ffa14f;
+}
+
+.intro-fourr {
+  color: #ffa14f;
+}
+
+.picture-one-wrapper, .picture-two-wrapper, .picture-three-wrapper, .picture-four-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 10px 0 10px;
+}
+
+.picture-onee-wrapper, .picture-twoo-wrapper, .picture-threee-wrapper, .picture-fourr-wrapper {
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'JennaSue', cursive;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #182942;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  color: #ffa14f;
+}
+
+.picture-twoo-wrapper {
+  color: #ffa14f;
+}
+
+.picture-threee-wrapper {
+  color: #ffa14f;
+}
+
+.picture-fourr-wrapper {
+  color: #ffa14f;
+}
+
+.picture {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.love-letter-intro {
+  font-family: 'JennaSue', cursive;
+  color: #ff9f4b
+}
+
+.love-letter-content-wrapper {
+  font-family: 'JennaSue', cursive;
+  font-size: 20px;
+  opacity: 0.5;
+  margin: 0 200px 200px 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffa14f;
+  border: 1px solid #ffa14f;
+}
+
+.love-letter-content-title {
+  padding: 20px 0 0 20px;
+}
+
+.love-letter-content {
+  padding: 20px;
+}
+
+.ender {
+  text-align: center;
+  font-family: 'JennaSue', cursive;
+  color: #ffa14f;
+}
+
+@media (max-width: 430px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* MAIN TITLE */
+  h1 {
+    font-size: 48px;
+    height: 60vh;
+    padding: 0 20px;
+    line-height: 1.2;
+  }
+
+  /* SECTION TITLES (Thank You) */
+  .intro-one,
+  .intro-two,
+  .intro-three,
+  .intro-four,
+  .love-letter-intro {
+    font-size: 48px;
+    padding: 0 10px;
+  }
+
+  /* PARAGRAPHS UNDER EACH TITLE */
+  .intro-onee,
+  .intro-twoo,
+  .intro-threee,
+  .intro-fourr {
+    font-size: 22px;
+    padding: 0 20px;
+    margin-top: 15px;
+  }
+
+  /* WRAPPER SPACING */
+  .intro-two-wrapper,
+  .intro-three-wrapper,
+  .intro-four-wrapper,
+  .love-letter-wrapper {
+    margin-top: 120px;
+  }
+
+  /* PICTURE ROWS */
+  .picture-one-wrapper,
+  .picture-two-wrapper,
+  .picture-three-wrapper,
+  .picture-four-wrapper {
+    flex-wrap: wrap;
+    margin: 15px 0;
+  }
+
+  /* PICTURE + CAPTION BOX */
+  .picture-onee-wrapper,
+  .picture-twoo-wrapper,
+  .picture-threee-wrapper,
+  .picture-fourr-wrapper {
+    margin: 10px;
+    font-size: 16px;
+    width: 45%;
+  }
+
+  /* IMAGES */
+  .picture {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  /* LOVE LETTER BLOCK */
+  .love-letter-content-wrapper {
+    font-size: 18px;
+    margin: 0 20px 150px 20px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .love-letter-content-title {
+    padding: 10px 0 0 10px;
+    font-size: 22px;
+  }
+
+  .love-letter-content {
+    padding: 10px;
+    line-height: 1.4;
+  }
+
+  .ender {
+    font-size: 22px;
+    margin-bottom: 80px;
+  }
+}
